@@ -15,14 +15,14 @@ const config: Config = {
         a: '#f9acaa', // accent
         white: '#ffffff', // white
         black: '#000000', // black
-        dark: {
-          p: '#1d4ed8', // primary
-          s: '#fbbf24', // secondary
-          a: '#f87171', // accent
-          white: '#ffffff', // white
-          black: '#000000', // black
-        }
       },
+      dark: {
+        p: '#1d4ed8', // primary
+        s: '#fbbf24', // secondary
+        a: '#f87171', // accent
+        white: '#ffffff', // white
+        black: '#000000', // black
+      }
     },
   },
   plugins: [],
