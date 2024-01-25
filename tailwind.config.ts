@@ -10,19 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        p: '#3490dc', // primary
-        s: '#ffed4a', // secondary
-        a: '#f9acaa', // accent
-        white: '#ffffff', // white
-        black: '#000000', // black
+        p: 'var(--primary)', // primary
+        s: 'var(--secondary)', // secondary
+        a: 'var(--accent)', // accent
+        fc: 'var(--font-content)', // font content
+        fh1: 'var(--font-heading-1)', // font hard 1
+        fh2: 'var(--font-heading-2)', // font hard 2
+        fh3: 'var(--font-heading-3)', // font hard 3
+        fh4: 'var(--font-heading-4)', // font hard 4
+        fh5: 'var(--font-heading-5)', // font hard 5
+        white: 'var(--white)', // white
+        black: 'var(--black)', // black
       },
-      dark: {
-        p: '#1d4ed8', // primary
-        s: '#fbbf24', // secondary
-        a: '#f87171', // accent
-        white: '#ffffff', // white
-        black: '#000000', // black
-      }
     },
   },
   plugins: [],
