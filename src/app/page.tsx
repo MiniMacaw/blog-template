@@ -1,4 +1,3 @@
-import ToggleThemeBtn from "@/components/ToggleThemeBtn";
 export default function Home() {
     return (
         <div className="py-0 px-8">
@@ -13,7 +12,6 @@ export default function Home() {
                             <div className=" text-black">black</div>
                         </div>
                     </div>
-                    <ToggleThemeBtn />
                 </nav>
             </div>
         </div>
