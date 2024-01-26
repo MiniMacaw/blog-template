@@ -18,7 +18,7 @@
   --font-heading-5: #000000;
 }
 
-[data-theme="dark"] {
+[root-theme="dark"] {
   --background-end-rgb: #1a202c;
   --background-start-rgb: #2d3748;
   --primary: #1d4ed8;
@@ -34,7 +34,7 @@
   --font-heading-5: #fff;
 }
 
-[data-theme="pink"] {
+[root-theme="pink"] {
   --background-end-rgb: #ffe0e9;
   --background-start-rgb: #ffd1e8;
   --primary: #d291bc;
@@ -50,7 +50,7 @@
   --font-heading-5: #12111e;
 }
 
-[data-theme="contrast"] {
+[root-theme="contrast"] {
   --background-end-rgb: #ffffff;
   --background-start-rgb: #000000;
   --primary: #ff0000;
