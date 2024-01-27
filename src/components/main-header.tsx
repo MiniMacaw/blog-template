@@ -1,4 +1,5 @@
 import { SelectTheme } from "@/components/select-theme"
+import Link from 'next/link'
 
 const routesText = [
     {
@@ -23,19 +24,19 @@ export function MainHeader() {
         ">
             <div className="flex-1 flex items-center">
                 <div className="w-10 h-10 grid bg-slate-400 ">
-                    <a href="/">
+                    <Link href="/">
                         logo
-                    </a>
+                    </Link>
                 </div>
             </div>
             <nav className="flex justify-center items-center">
                 <ul className="flex justify-center items-center gap-4">
                     {
-                        routesText.map((route) => (<li key={route.path}><a href={route.path}>{route.name}</a></li>))
+                        routesText.map((route) => (<li key={route.path}><Link href={route.path}>{route.name}</Link></li>))
                     }
                 </ul>
                 <SelectTheme/>
             </nav>
         </header>
     );
-}
+}``
