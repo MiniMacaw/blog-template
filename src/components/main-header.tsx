@@ -1,3 +1,5 @@
+import { SelectTheme } from "@/components/select-theme"
+
 const routesText = [
     {
         path: "/",
@@ -32,6 +34,7 @@ export function MainHeader() {
                         routesText.map((route) => (<li key={route.path}><a href={route.path}>{route.name}</a></li>))
                     }
                 </ul>
+                <SelectTheme/>
             </nav>
         </header>
     );
