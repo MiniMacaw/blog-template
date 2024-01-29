@@ -1,5 +1,8 @@
+'use client'
+
 import { SelectTheme } from "@/components/select-theme"
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const routesText = [
     {
@@ -17,6 +20,7 @@ const routesText = [
 ]
 
 export function MainHeader() {
+    const pathname = usePathname()
     return (
         <header className="
         w-full flex h-[100px] bg-p px-10
@@ -32,11 +36,22 @@ export function MainHeader() {
             <nav className="flex justify-center items-center">
                 <ul className="flex justify-center items-center gap-4">
                     {
-                        routesText.map((route) => (<li key={route.path}><Link href={route.path}>{route.name}</Link></li>))
+                        routesText.map((route) => (
+                            <li
+                                key={route.path}
+                                className={
+                                    pathname === route.path
+                                        ? "text-s"
+                                        : "text-white"
+                                }
+                            >
+                                <Link href={route.path}>{route.name}</Link>
+                            </li>
+                        ))
                     }
                 </ul>
-                <SelectTheme/>
+                <SelectTheme />
             </nav>
         </header>
     );
-}``
+}
