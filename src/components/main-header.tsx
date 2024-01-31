@@ -8,6 +8,9 @@ const routesText = [
     {
         path: "/",
         name: "Home",
+    },{
+        path: "/posts",
+        name: "Blog",
     },
     {
         path: "/about",

@@ -1,5 +1,7 @@
 ---
 title: Your name
+type: Page
+date: 2021-12-24
 description: Your name's Portfolio
 plum: true
 ---

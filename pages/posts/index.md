@@ -1,6 +1,8 @@
 ---
 title: Lorem Ipsum
+type: Post
 date: 2021-05-19T16:00:00.000+00:00
+description: short post
 lang: en
 duration: 10min
 ---
