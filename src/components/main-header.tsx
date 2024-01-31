@@ -12,6 +12,9 @@ const routesText = [
     {
         path: "/about",
         name: "About",
+    },{
+        path: "/posts",
+        name: "Blog",
     },
     {
         path: "/contact",
