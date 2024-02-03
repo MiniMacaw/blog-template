@@ -5,9 +5,9 @@
 
 - [ ] confirm base color, font, and layout .....
 - [X] color mode
-- [ ] only use app routers
+- [X] only use app routers
 - [ ] add and use env variables
-- [ ] markdown to json
-- [ ] render markdown
-- [ ] publish
+- [X] markdown to json
+- [X] render markdown
+- [X] publish
 
