@@ -2,7 +2,7 @@
 
 import { useTheme } from 'next-themes'
 
-const ThemeList = ['light', 'dark', 'pink', 'contrast']
+const ThemeList = ['light', 'dark', 'pink']
 
 const SelectTheme = () => {
   const { theme, setTheme } = useTheme()

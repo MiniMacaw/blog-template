@@ -50,7 +50,7 @@
   --font-heading-5: #12111e;
 }
 
-[root-theme="contrast"] {
+/* [root-theme="contrast"] {
   --background-end-rgb: #ffffff;
   --background-start-rgb: #000000;
   --primary: #ff0000;
@@ -64,7 +64,7 @@
   --font-heading-3: #fff;
   --font-heading-4: #fff;
   --font-heading-5: #fff;
-}
+} */
 
 html,
 body {
