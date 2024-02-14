@@ -1,5 +1,5 @@
 "use client"
-
+import Image from 'next/image'
 import { SelectTheme } from "@/components/select-theme"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -34,7 +34,14 @@ export function MainHeader() {
     >
       <div className="flex-1 flex items-center">
         <div className="w-10 h-10 grid bg-slate-400 ">
-          <Link href="/">logo</Link>
+          <Link href="/">
+            <Image 
+              src={"/favicon.ico"}
+              width={40}
+              height={40}
+              alt="Logo"
+            />
+          </Link>
         </div>
       </div>
       <nav className="flex justify-center items-center">
