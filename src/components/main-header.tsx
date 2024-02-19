@@ -1,27 +1,12 @@
 "use client"
 import Image from 'next/image'
-import { SelectTheme } from "@/components/select-theme"
+import {SelectTheme} from "@/components/select-theme"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import {usePathname} from "next/navigation"
+import {allDirs} from "@/hooks/useContentDir";
 
-const routesText = [
-  {
-    path: "/",
-    name: "Home",
-  },
-  {
-    path: "/posts",
-    name: "Blog",
-  },
-  {
-    path: "/about",
-    name: "About",
-  },
-  {
-    path: "/contact",
-    name: "Contact",
-  },
-]
+
+const routesText = [...allDirs].map(v=> ({name: v, path: `/${v}`}))
 
 export function MainHeader() {
   const pathname = usePathname()
@@ -35,7 +20,7 @@ export function MainHeader() {
       <div className="flex-1 flex items-center">
         <div className="w-10 h-10 grid bg-slate-400 ">
           <Link href="/">
-            <Image 
+            <Image
               src={"/favicon.ico"}
               width={40}
               height={40}
@@ -55,7 +40,7 @@ export function MainHeader() {
             </li>
           ))}
         </ul>
-        <SelectTheme />
+        <SelectTheme/>
       </nav>
     </header>
   )
