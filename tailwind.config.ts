@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
 
 const config: Config = {
   darkMode: "class",
@@ -21,6 +21,7 @@ const config: Config = {
         fh5: 'var(--font-heading-5)', // font hard 5
         white: 'var(--white)', // white
         black: 'var(--black)', // black
+        c1: 'var(--c1)', // normal grey
       },
     },
   },

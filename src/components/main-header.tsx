@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {SelectTheme} from "@/components/select-theme"
 import Link from "next/link"
 import {usePathname} from "next/navigation"
-import {allDirs} from "@/hooks/useContentDir";
+import {allDirs} from "@/utils";
 
 
 const routesText = [...allDirs].map(v=> ({name: v, path: `/${v}`}))
