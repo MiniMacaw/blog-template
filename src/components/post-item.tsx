@@ -22,9 +22,9 @@ function PostCard(
         <time dateTime={post.date} className="mb-2 block text-xs text-c1">
           {dayjs(post.date).format("MMMM D, YYYY")}
         </time>
-        <span className="mb-2 block text-xs text-c1">
-          {post.duration} min read
-        </span>
+        {/*<span className="mb-2 block text-xs text-c1">*/}
+        {/*  {post.duration} min read*/}
+        {/*</span>*/}
 
       </div>
 
