@@ -3,7 +3,7 @@ import {Post} from "@/type";
 
 // get index post,that is ths outermost 01.index.md file in the content folder
 const getIndexPost = () => {
-  return allPosts.find(v => v._raw.sourceFilePath === '01.index.md')
+  return allPosts.find(v => v._raw.sourceFilePath === 'index.md')
 }
 
 const get404Post = (): Post[] => {
