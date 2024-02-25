@@ -24,7 +24,7 @@ export default function Home() {
               if (post) {
                 return PostItem({post})
               } else {
-                return <div>123</div>
+                return <div>not found index page</div>
               }
             })()
           }
