@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cc__comment": "is create content",
+    "cc": "node scripts/createContent.mjs"
   },
   "dependencies": {
     "contentlayer": "^0.3.4",
     "date-fns": "^3.3.1",
     "dayjs": "^1.11.10",
+    "inquirer": "^9.2.15",
     "next": "14.1.0",
     "next-contentlayer": "^0.3.4",
     "next-themes": "^0.2.1",
