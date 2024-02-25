@@ -18,6 +18,10 @@
   --font-heading-5: #000000;
 }
 
+:root{
+  --c1: #4B5563;
+}
+
 [root-theme="dark"] {
   --background-end-rgb: #1a202c;
   --background-start-rgb: #2d3748;
