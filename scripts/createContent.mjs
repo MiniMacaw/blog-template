@@ -41,7 +41,6 @@ async function getOrder(folderName) {
 async function createFile(props) {
     const {folderName, fileName, fileTitle, lang} = props
     try {
-        const order = await getOrder('blog')
         const folderPath = join(cwd, `./content/${folderName}`)
         // if not exist, create folder
         const isFolderExist = await fs
@@ -52,6 +51,7 @@ async function createFile(props) {
             await fs.mkdir(folderPath)
         }
 
+        const order = await getOrder(folderName)
         const filePath = join(cwd, `./content/${folderName}/${order}.${fileName}.md`)
         const isExist = await fs
             .readFile(filePath)

@@ -23,7 +23,14 @@ export const Post = defineDocumentType(() => ({
     dir: {
       type: 'string',
       resolve: (post) => {
-        return post._raw.sourceFileDir
+        return post._raw.sourceFileDir.split('.').pop()
+      }
+    },
+    dir_order: {
+      type: 'number',
+      resolve: (post) => {
+        const dir = post._raw.sourceFileDir.split('.').shift() || '00'
+        return parseInt(dir) || 0
       }
     }
   },
