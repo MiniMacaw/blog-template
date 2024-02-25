@@ -28,17 +28,6 @@ function PostCard(
 
       </div>
 
-      <div className="group block w-full">
-        <div className="bg-blue-500 text-white p-2">
-          hover show post info
-        </div>
-        <div className="h-0 overflow-hidden group-hover:h-auto text-white">
-          <div className="p-4">
-            {JSON.stringify(post)}
-          </div>
-        </div>
-      </div>
-
       <div
         className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
         dangerouslySetInnerHTML={{__html: post.body.html}}

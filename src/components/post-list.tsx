@@ -1,4 +1,5 @@
 import {Post} from "@/type";
+import Link from "next/link";
 
 
 export default function postList(
@@ -6,13 +7,14 @@ export default function postList(
 ) {
   return (
     <div>
-      {posts.map((post, idx) => (
-        <div key={idx}>
-          <h1>{post.title}</h1>
-          <p>{post.date}</p>
-          <p>{post.duration}</p>
-        </div>
-      ))}
+      {
+        posts.map(post => {
+          return <div className="p-3" key={post.url}>
+            <Link className="text-p text-xl hover:text-s" href={post.url}>{post.title}</Link>
+            <div>{post.dir}</div>
+          </div>
+        })
+      }
     </div>
   )
 }
